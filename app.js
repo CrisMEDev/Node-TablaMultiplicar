@@ -5,9 +5,8 @@ console.clear();
 
 // Tabla de multiplicar
 const base = 3;
-crearArchivo( base );
+crearArchivo( base )
+    .then( nombreArchivo => console.log(nombreArchivo, 'creado') )
+    .catch(err => console.log(err));
 
-
-
-console.log('Archivo creado');
 
