@@ -15,7 +15,7 @@ console.log(base);
 
 
 
-// Tabla de multiplicar
+// Tabla de multiplicar 
 // const base = 3;
 crearArchivo( base )
     .then( nombreArchivo => console.log(nombreArchivo, 'creado') )
