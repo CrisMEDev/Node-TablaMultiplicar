@@ -26,7 +26,7 @@ console.log( 'yargs base: ', argv.base );
 
 
 // Tabla de multiplicar 
-crearArchivo( argv.b, argv.l )
+crearArchivo( argv.b, argv.l, argv.a )
     .then( nombreArchivo => console.log(nombreArchivo, 'creado') )
     .catch(err => console.log(err));
 

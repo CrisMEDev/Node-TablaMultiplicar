@@ -2,7 +2,7 @@ const fs = require('fs')    // Se carga la libreria para file system
 const colors = require('colors');
 
 
-const crearArchivo = async ( base = 5, listar = false ) => {
+const crearArchivo = async ( base = 5, listar = false, alcance = 10 ) => {
 
     // return new Promise( ( resolve, reject ) => {
     //     console.log('==========================');
@@ -27,7 +27,7 @@ const crearArchivo = async ( base = 5, listar = false ) => {
         console.log('=========================='.cyan);
 
         let salida = '';
-        for( let i = 1; i <= 10; i++ )
+        for( let i = 1; i <= alcance; i++ )
             salida += `${base} * ${i} = ${base * i}\n` ;
 
 
