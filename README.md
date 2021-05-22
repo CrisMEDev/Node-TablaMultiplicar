@@ -28,3 +28,6 @@ Se agregará la dependencia en package.json
 
 * Para actualizar paquetes sin confirmación (solo hacer si se sabe lo que se va a actualizar ):
     * ``` npm update ```
+
+* Para reconstruir los módulos de node de acuerdo a package.json y el lock:
+    * ``` npm install ```
