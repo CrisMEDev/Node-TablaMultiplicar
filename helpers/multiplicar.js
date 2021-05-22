@@ -1,4 +1,5 @@
 const fs = require('fs')    // Se carga la libreria para file system
+const colors = require('colors');
 
 
 const crearArchivo = async ( base = 5, listar = false ) => {
@@ -21,16 +22,16 @@ const crearArchivo = async ( base = 5, listar = false ) => {
     // });
 
     try {
-        console.log('==========================');
-        console.log(`Tabla del ${base}`);
-        console.log('==========================');
+        console.log('=========================='.cyan);
+        console.log(`Tabla del ${colors.blue(base)}`);
+        console.log('=========================='.cyan);
 
         let salida = '';
         for( let i = 1; i <= 10; i++ )
             salida += `${base} * ${i} = ${base * i}\n` ;
 
 
-        if ( listar ) console.log(salida);
+        if ( listar ) console.log(colors.green(salida));
 
         fs.writeFileSync( `tabla-${base}.txt`, salida );
 
